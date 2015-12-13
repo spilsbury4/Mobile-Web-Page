@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@media (max width 380px) {
+
 .container {
 	background-color: #FFFFFF;
 	width: 90%;
@@ -70,3 +72,4 @@
 	float: left;
 	width: 33%;
 	color: #000000;
+}
