@@ -15,7 +15,7 @@
 }
 
 .header {
-	border-bottom: 2px solid #DADADA;
+	border-bottom: 1px solid #DADADA;
 	padding-bottom: 10px;
 }
 #mainnav {
@@ -33,7 +33,7 @@
 	display: block;
 	float: left;
 	font-family: Helvetica;
-	font-weight: lighter;
+	font-weight: 100;
 	font-size: 7px;
 	letter-spacing: 1px;
 	text-decoration: none;
@@ -51,7 +51,7 @@
 	text-align: center;
 	font-size: 11px;
 	letter-spacing: 6px;
-	padding-top: 140px;
+	padding-top: 145px;
 }
 #socialmedia {
 	padding-top: 10px;
