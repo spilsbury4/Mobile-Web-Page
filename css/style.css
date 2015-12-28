@@ -34,7 +34,7 @@
 	float: left;
 	font-family: Helvetica;
 	font-weight: 100;
-	font-size: 7px;
+	font-size: 8px;
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-align: center;
@@ -98,19 +98,35 @@
 	font-size: x-small;
 }
 .videosbody {
-	font-family: Helvetica;
-	font-size: 8px;
+	font-family: avenir;
+	font-size: 10px;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 14px;
 	padding-bottom: 20px;
-	line-height: 10px;
+	line-height: 12px;
 }
 .videosbody img {
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-bottom: 10px;
 }
 .videosbody em {
 	font-size: 11px;
 	font-weight: bold;
 	font-style: normal;
+	padding-bottom: 0px;
+}
+.youtubecontainer {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
