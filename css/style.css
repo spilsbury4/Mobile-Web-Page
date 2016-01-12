@@ -54,7 +54,8 @@
 	padding-top: 5px;
 }
 .body {
-	margin-bottom: 140px;
+	margin-bottom: 20px;
+	padding-top: 32px;
 }
 #socialmedia {
 	padding-top: 10px;
@@ -131,8 +132,7 @@
 	height: 100%;
 }
 .bodycontainer {
-	height: 90%
-%
+	height: 90%;
 	padding-top: 34px;
 	padding-bottom: 24px;
 	padding-top: 36px;
