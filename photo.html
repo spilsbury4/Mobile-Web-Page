@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jackson Spilsbury - Director</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="css/lightbox.css">
+<link href="css/photoswipe.css" rel="stylesheet" type="text/css">
 </head>
 <div class="container">
 <header>
@@ -24,11 +24,147 @@
 <body>
 <div class="bodycontainer">
    	
-    <a href="img/EverybodyKnows_thumbnail.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/EverybodyKnows_thumbnail.jpg" width="100%" alt=""/></a>
-    <a href="img/MindRight_thumbnail.jpg" data-lightbox="image-1" data-title="My caption"><img src="img/MindRight_thumbnail.jpg" width="100%" alt=""/></a>
+    <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+    <!--<h2>Third Gallery:</h2>-->
+
+  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+  
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="../../Documents/Mobile Web Page/img/5424saih3.png" itemprop="contentUrl" data-size="1500x844">
+          <img src="../../Documents/Mobile Web Page/img/5424saih3.png" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption itemprop="caption description">5424</figcaption>
+    </figure>
+
+
+     <figure id="half" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="../../Documents/Mobile Web Page/img/5424saih2.png" itemprop="contentUrl" data-size="1500x844">
+          <img src="../../Documents/Mobile Web Page/img/5424saih2.png" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption itemprop="caption description">5424</figcaption>
+    </figure>
+    
+     <figure id="half" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="../../Documents/Mobile Web Page/img/5424saih1.png" itemprop="contentUrl" data-size="1500x844">
+          <img src="../../Documents/Mobile Web Page/img/5424saih1.png" itemprop="thumbnail" alt="Image description" />
+      </a>
+      <figcaption itemprop="caption description">5424</figcaption>
+    </figure>
+
+  </div>
+    
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="../../Documents/Mobile Web Page/img/EverybodyKnows_thumbnail.jpg" itemprop="contentUrl" data-size="1920x960">
+          <img src="../../Documents/Mobile Web Page/img/EverybodyKnows_thumbnail.jpg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      
+                                          <figcaption itemprop="caption description">Steph J. Groggs from Injury Reserve</figcaption>
+                                          
+    </figure>
+    
+    
+
+    
+
+
+  </div>
+
+<!--<h2>Second gallery:</h2>-->
+
+  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+  
+
+   <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="../../Documents/Mobile Web Page/img/MindRight_thumbnail.jpg" itemprop="contentUrl" data-size="1920x1080">
+          <img src="../../Documents/Mobile Web Page/img/MindRight_thumbnail.jpg" itemprop="thumbnail" alt="Image description" />
+      </a>
+      
+                                          <figcaption itemprop="caption description">Downtown Phoenix - Saih</figcaption>
+                                          
+
+
+  </div>
+  
+  
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+          </div>
+
+        </div>
+
 </div>
-	<script src="js/lightbox-plus-jquery.js"></script>
+    <script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe.min.js'></script>
+<script src='http://photoswipe.s3-eu-west-1.amazonaws.com/pswp/dist/photoswipe-ui-default.min.js'></script>
+
+        <script src="js/index.js"></script>
+</div>
 </body>
+
 <footer  class="footer">vibes n stuff
 	<div class="socialmedia">
 		<ul>
