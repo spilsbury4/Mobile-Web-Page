@@ -47,6 +47,10 @@
 	width: 100%;
 	margin-top: 25px;
 }
+.body {
+	margin-bottom: 20px;
+	padding-top: 33px;
+}
 .footer {
 	font-family: avenir;
 	font-weight: lighter;
@@ -54,10 +58,6 @@
 	font-size: 11px;
 	letter-spacing: 6px;
 	padding-top: 5px;
-}
-.body {
-	margin-bottom: 20px;
-	padding-top: 33px;
 }
 .socialmedia {
 	padding-top: 10px;
@@ -134,11 +134,33 @@
 	height: 100%;
 }
 .bodycontainer {
-	height: 90%;
 	padding-top: 34px;
 	padding-bottom: 24px;
 	padding-top: 36px;
 }
 .gif {
 	border-radius: 20px;
+}
+
+
+
+.my-gallery {
+	width: 100%;
+	float: left;
+	padding-bottom: 25px;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 100%;
+}
+.my-gallery figcaption {
+  display: none;
+}.my-gallery #half {
+	width: 48%;
 }
