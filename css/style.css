@@ -17,20 +17,23 @@
 .header {
 	border-bottom: 1px solid #DADADA;
 	padding-bottom: 20px;
-	padding-top: px;
+<<<<<<< HEAD
+	padding-top: 0px;
+=======
+>>>>>>> parent of 04cc76b... alignment fixes
 }
-#mainnav {
-	padding-top: 10px;
+.mainnav {
+	padding-top: 13px;
 }
 
-#mainnav ul {
+.mainnav ul {
 	list-style-type: none;
 	padding-top: 0px;
 	padding-right: 0px;
 	padding-bottom: 0px;
 	padding-left: 0px;
 }
-#mainnav a {
+.mainnav a {
 	display: block;
 	float: left;
 	font-family: Helvetica;
@@ -41,6 +44,7 @@
 	text-align: center;
 	width: 33%;
 	color: #000000;
+	height: 30px;
 }
 .bodypic {
 	width: 100%;
@@ -56,13 +60,13 @@
 }
 .body {
 	margin-bottom: 20px;
-	padding-top: 35px;
+	padding-top: 33px;
 }
-#socialmedia {
+.socialmedia {
 	padding-top: 10px;
 }
 
-#socialmedia ul {
+.socialmedia ul {
 	list-style-type: none;
 	padding-top: 0px;
 	padding-right: 0px;
@@ -70,7 +74,7 @@
 	padding-left: 0px;
 	text-align: center;
 }
-#socialmedia a {
+.socialmedia a {
 	display: block;
 	float: left;
 	width: 33%;
@@ -125,13 +129,11 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-
 .video {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	border-radius: 10px;
 	height: 100%;
 }
 .bodycontainer {
@@ -141,5 +143,5 @@
 	padding-top: 36px;
 }
 .gif {
-	border-radius: 10px;
+	border-radius: 20px;
 }
