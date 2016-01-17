@@ -3,7 +3,7 @@
 .container {
 	background-color: #FFFFFF;
 	width: 90%;
-	max-width: 365px;
+	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -164,3 +164,4 @@
 }.my-gallery #half {
 	width: 48%;
 }
+
