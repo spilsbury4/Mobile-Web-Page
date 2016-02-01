@@ -11,54 +11,157 @@
 	<div class="header">
   	  <a href="index.html"><img src="img/header.png" width="100%" alt=""/></a>
     </div>
-<nav class="mainnav">
-	<div class="nav">
+<nav>
   		<ul>
     		<li><a href="videos.html">VIDEOS</a></li>
     		<li><a href="photo.html">PHOTO</a></li>
     		<li><a href="about.html">ABOUT</a></li>
   		</ul>
-	</div>
 </nav>
 <body>
-	<div class="videosbody">
- 		<!--<img src="img/Yo_thumbnail.png" width="100%" alt=""/>-->
-        		<div class="youtubecontainer">
-        		<iframe src="https://www.youtube.com/embed/9jkx03pnMtg?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-                <!--<video width="100%" poster="img/Yo_thumbnail.png" controls>
-                <source src="video/yo.mp4" type="video/mp4">
-                </video>-->
-        		</div>
-        	<em>YO</em> INJURY RESERVE<br>
-        	DIRECTED BY JACKSON SPILSBURY AND INJURY RESERVE. RELEASED 10.7.15 VIA ILLROOTS
- 	<!--<img src="img/Squad_thumbnail.jpg" width="100%" alt=""/>-->
-        		<div class="youtubecontainer">
-        		<iframe src="https://www.youtube.com/embed/cPFdDH7uJHo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-                <!--<video width="100%" poster="img/Squad_thumbnail.jpg" controls>
-                <source class="video" src="video/squad.mp4" type="video/mp4">
-                </video>-->
-        		</div>
-        	<em>SQUAD</em> DEMI HUGHES<br>
-        	DIRECTED BY JACKSON SPILSBURY. RELEASED 2.23.15
- 	<!--<img src="img/EverybodyKnows_thumbnail.jpg" width="100%" alt=""/>-->
-        		<div class="youtubecontainer">
-                <iframe src="https://www.youtube.com/embed/yPs4RAJd1-o?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-                <!--<video width="100%" poster="img/EverybodyKnows_thumbnail.jpg" controls>
-                <source src="video/everybodyknows.mp4" type="video/mp4">
-                </video>-->
-        		</div>
-        	<em>EVERYBODY KNOWS</em> INJURY RESERVE<br>
-        	DIRECTED BY VIBES N STUFF. RELEASED 6.18.15 VIA ILLROOTS
- <!--<img src="img/MindRight_thumbnail.jpg" width="100%" alt=""/>-->
-      			<div class="youtubecontainer">
-        		<iframe src="https://www.youtube.com/embed/uCXjznpMCeY?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen class="video"></iframe>
-                <!--<video width="100%" poster="img/MindRight_thumbnail.jpg" controls>
-                <source src="video/mindright.mp4" type="video/mp4">
-                </video>-->
-        		</div>
-        	<em>MIND RIGHT</em> SAIH<br>
-        	DIRECTED BY JACKSON SPILSBURY. RELEASED 7.30.15 VIA ELEVATOR.
+
+<div class="videosbody">
+
+<div class="vimeo-container">
+	<div class="vimeo-player" id="foulplay_thumbnail" data-id="153484201"></div>
     </div>
+        <em>ONE WAY OUT DELIVERY 2</em> THE FOULPLAY COMPANY<br>
+        	DIRECTED BY JACKSON SPILSBURY AND PARKER COREY.
+            
+<div class="youtube-container">
+        <div class="youtube-player" id="yo_thumbnail" data-id="9jkx03pnMtg">
+        <!--<div class="play-button"></div>-->    
+        </div>
+    </div>
+    <em>YO</em> INJURY RESERVE<br>
+        	DIRECTED BY JACKSON SPILSBURY AND INJURY RESERVE. RELEASED 10.7.15 VIA ILLROOTS
+            
+<div class="youtube-container">
+        <div class="youtube-player-squad" id="squad_thumbnail" data-id="cPFdDH7uJHo">
+        <!--<div class="play-button"></div>-->    
+        </div>
+    </div>
+    <em>SQUAD</em> DEMI HUGHES<br>
+        	DIRECTED BY JACKSON SPILSBURY. RELEASED 2.23.15
+            
+ <div class="youtube-container">
+        <div class="youtube-player-everybodyknows" id="everybodyknows_thumbnail" data-id="yPs4RAJd1-o">
+        <!--<div class="play-button"></div>-->    
+        </div>
+    </div>
+    <em>EVERYBODY KNOWS</em> INJURY RESERVE<br>
+        	DIRECTED BY VIBES N STUFF. RELEASED 6.18.15 VIA ILLROOTS
+            
+ <div class="youtube-container">
+        <div class="youtube-player" id="mindright_thumbnail" data-id="uCXjznpMCeY">
+        <!--<div class="play-button"></div> -->   
+        </div>
+    </div>
+    <em>MIND RIGHT</em> SAIH<br>
+        	DIRECTED BY JACKSON SPILSBURY. RELEASED 7.30.15 VIA ELEVATOR.
+
+<script>
+(function() {
+    var v = document.getElementsByClassName("vimeo-player");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="vimeo-thumb" src="img/foulplay_thumbnail.png"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "https://player.vimeo.com/video/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "vimeo-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
+
+<script>
+(function() {
+    var v = document.getElementsByClassName("youtube-player");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="youtube-thumb" src="img/' + id + '.png"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
+
+<script>
+(function() {
+    var v = document.getElementsByClassName("youtube-player-squad");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="youtube-thumb" src="img/' + id + '.png"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
+
+<script>
+(function() {
+    var v = document.getElementsByClassName("youtube-player-everybodyknows");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="youtube-thumb" src="img/' + id + '.png"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
+
+<!--Insert at the end of the thumbnail return
+<div class="play-button"></div>
+-->
+
+
+	
 </body>
 <footer  class="footer">vibes n stuff
 	<div class="socialmedia">
