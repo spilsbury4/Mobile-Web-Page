@@ -200,6 +200,20 @@ nav li a {
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
+.youtube-player-mindright { 
+	display: block; 
+	width: 100%; /* assuming that the video has a 16:9 ratio */ 
+	padding-bottom: 50%; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	height: 100%; 
+	cursor: hand; 
+	cursor: pointer; 
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
 img.youtube-thumb { 
 	bottom: 0; 
 	display: block; 
