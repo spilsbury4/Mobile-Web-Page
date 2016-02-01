@@ -48,7 +48,7 @@ nav li a {
 
 .body {
 	margin-bottom: 15px;
-	padding-top: 26px;
+	padding-top: 28px;
 }
 .footer {
 	font-family: avenir;
@@ -56,7 +56,7 @@ nav li a {
 	text-align: center;
 	font-size: 11px;
 	letter-spacing: 6px;
-	padding-top: 20px;
+	padding-top: 10px;
 }
 .socialmedia {
 	padding-top: 10px;
@@ -69,6 +69,7 @@ nav li a {
 	padding-bottom: 0px;
 	padding-left: 0px;
 	text-align: center;
+	width: 100%;
 }
 .socialmedia a {
 	display: block;
@@ -157,7 +158,7 @@ nav li a {
 	max-width: 600px;
 	padding-bottom: 0px;
 }
-.youtube-player { 
+.youtube-player-yo { 
 	display: block; 
 	width: 100%; /* assuming that the video has a 16:9 ratio */ 
 	padding-bottom: 56.25%; 
