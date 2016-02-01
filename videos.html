@@ -29,7 +29,7 @@
         	DIRECTED BY JACKSON SPILSBURY AND PARKER COREY.
             
 <div class="youtube-container">
-        <div class="youtube-player" id="yo_thumbnail" data-id="9jkx03pnMtg">
+        <div class="youtube-player-yo" id="yo_thumbnail" data-id="9jkx03pnMtg">
         <!--<div class="play-button"></div>-->    
         </div>
     </div>
@@ -53,7 +53,7 @@
         	DIRECTED BY VIBES N STUFF. RELEASED 6.18.15 VIA ILLROOTS
             
  <div class="youtube-container">
-        <div class="youtube-player" id="mindright_thumbnail" data-id="uCXjznpMCeY">
+        <div class="youtube-player-mindright" id="mindright_thumbnail" data-id="uCXjznpMCeY">
         <!--<div class="play-button"></div> -->   
         </div>
     </div>
@@ -86,7 +86,7 @@ function labnolIframe() {
 
 <script>
 (function() {
-    var v = document.getElementsByClassName("youtube-player");
+    var v = document.getElementsByClassName("youtube-player-yo");
     for (var n = 0; n < v.length; n++) {
         var p = document.createElement("div");
         p.innerHTML = labnolThumb(v[n].dataset.id);
@@ -135,6 +135,30 @@ function labnolIframe() {
 <script>
 (function() {
     var v = document.getElementsByClassName("youtube-player-everybodyknows");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="youtube-thumb" src="img/' + id + '.png"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
+
+<script>
+(function() {
+    var v = document.getElementsByClassName("youtube-player-mindright");
     for (var n = 0; n < v.length; n++) {
         var p = document.createElement("div");
         p.innerHTML = labnolThumb(v[n].dataset.id);
