@@ -22,12 +22,19 @@
 
 <div class="videosbody">
 
+<div class="youtube-container">
+        <div class="youtube-player-ohshit" id="ohshit_thumbnail" data-id="Mjw96lYgU">   
+        </div>
+    </div>
+    <em>OH SHIT!!!</em> INJURY RESERVE<br>
+        	CINEMATORGRAPHY AND SET DESIGN BY JACKSON SPILSBURY. RELEASED 7.26.16
+
 <div class="vimeo-container">
 	<div class="vimeo-player" id="foulplay_thumbnail" data-id="155099988"></div>
     </div>
         <em>"ONE WAY OUT" DELIVERY 2 VIDEO EDITORIAL</em><br>
         	DIRECTED BY JACKSON SPILSBURY AND PARKER COREY.<br>
-            PREMIERED 2.13.16 VIA COMPLEX
+            POSTED 2.13.16 VIA COMPLEX
             
 <div class="youtube-container">
         <div class="youtube-player-yo" id="yo_thumbnail" data-id="9jkx03pnMtg">   
@@ -57,6 +64,30 @@
     <em>MIND RIGHT</em> SAIH<br>
         	DIRECTED BY JACKSON SPILSBURY. RELEASED 7.30.15 VIA ELEVATOR.
  </div>
+
+<script>
+(function() {
+    var v = document.getElementsByClassName("youtube-player-ohshit");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="youtube-thumb" src="img/' + id + '.jpg"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
 
 <script>
 (function() {

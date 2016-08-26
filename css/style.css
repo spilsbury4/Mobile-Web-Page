@@ -158,6 +158,20 @@ nav li a {
 	max-width: 600px;
 	padding-bottom: 0px;
 }
+.youtube-player-ohshit { 
+	display: block; 
+	width: 100%; /* assuming that the video has a 16:9 ratio */ 
+	padding-bottom: 50%; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	height: 100%; 
+	cursor: hand; 
+	cursor: pointer; 
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
 .youtube-player-yo { 
 	display: block; 
 	width: 100%; /* assuming that the video has a 16:9 ratio */ 
