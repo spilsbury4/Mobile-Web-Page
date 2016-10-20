@@ -32,6 +32,7 @@ nav li {
 	width: 33%;
 	padding-top: 5px;
 	padding-bottom: 6px;
+	border-bottom: 1px solid #DADADA;
 }
 nav li a {
 	margin: 0;
@@ -60,7 +61,7 @@ h1 {
 	font-family: avenir;
 	font-size: 10px;
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 56px;
 	padding-bottom: 40px;
 	line-height: 12px;
 	border-bottom: 1px solid #DADADA;
@@ -116,7 +117,7 @@ h1 {
 	text-align: center;
 	font-family: avenir;
 	font-size: 20px;
-	padding-top: 35px;
+	padding-top: 80px;
 }
 .aboutbody {
 	font-family: avenir;
@@ -170,7 +171,7 @@ h1 {
 	padding-top: 0px;
 }
 .photo {
-	padding-top: 40px;
+	padding-top: 36px;
 	padding-bottom: 40px;
 	
 }
