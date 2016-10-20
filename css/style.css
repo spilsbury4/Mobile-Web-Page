@@ -46,7 +46,7 @@ nav li a {
 	letter-spacing: 1px;
 }
 h1 {
-	font-size: 12px;
+	font-size: 1px;
 	font-weight: bold;
 	padding-bottom: 0px;
 	text-decoration: none;
@@ -69,11 +69,11 @@ h1 {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-	padding-bottom: 20px;
+	padding-bottom: 28px;
 	font-family: avenir;
 	font-size: 10px;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 28px;
 	line-height: 12px;
 }
 .installationpreview em {
@@ -166,11 +166,20 @@ h1 {
 	padding-bottom: 20px;
 	line-height: 12px;
 }
+.caption #truck {
+	padding-top: 12px;
+	padding-bottom: 26px;
+}
+.caption #retailspace {
+}
+.bodycontainer #retailspace {
+	padding-bottom: 40px;
+}
 .gif {
 	padding-top: 0px;
 }
 .photo {
-	padding-top: 26px;
+	padding-top: 36px;
 	padding-bottom: 40px;
 	
 }
@@ -183,7 +192,7 @@ h1 {
 	font-style: normal;
 }
 .photogallery {
-	margin-top: 34px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 .my-gallery {
@@ -193,6 +202,7 @@ h1 {
 	font-size: 10px;
 	text-align: center;
 	line-height: 12px;
+	padding-bottom: 0px;
 }
 .my-gallery em{
 	font-size: 11px;
@@ -373,6 +383,8 @@ div.play-button {
 	top: 0; 
 	left: 0; 
 }
+.bodycontainer .showcase #retailspace {
+}
 
 @media (min-width: 600px)
 {
@@ -387,6 +399,13 @@ nav li a {
 	font-weight: 100;
 	font-size: 10px;
 	letter-spacing: 1px;
+}
+.vimeocaption {
+	padding-top: 12px;
+	padding-bottom: 26px;
+}
+.bodycontainer #retailspace {
+	padding-bottom: 40px;
 }
 .footer {
 	font-family: avenir;
