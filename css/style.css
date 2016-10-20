@@ -45,10 +45,42 @@ nav li a {
 	font-size: 8px;
 	letter-spacing: 1px;
 }
-
+h1 {
+	font-size: 13px;
+	font-weight: bold;
+	padding-bottom: 0px;
+	text-decoration: none;
+	font-style: normal;
+}
 .body {
 	margin-bottom: 15px;
 	padding-top: 28px;
+}
+.installationpreview {
+	font-family: avenir;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	line-height: 12px;
+	border-bottom: 1px solid #DADADA;
+}
+.installationpreview img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 28px;
+	font-family: avenir;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 28px;
+	line-height: 12px;
+}
+.installationpreview em {
+	font-size: 11px;
+	font-weight: bold;
+	font-style: normal;
+	padding-bottom: 0px;
 }
 .footer {
 	font-family: avenir;
@@ -99,6 +131,7 @@ nav li a {
 .aboutbody .email {
 	color: #000000;
 	font-size: x-small;
+	padding-bottom: 28px;
 }
 .videosbody {
 	font-family: avenir;
@@ -125,15 +158,46 @@ nav li a {
 	width: 100%;
 	height: 100%;
 }
-.bodycontainer {	
+.bodycontainer {
+	font-family: avenir;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	line-height: 12px;
 }
 .gif {
 	padding-top: 0px;
 }
+.photo {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	
+}
+.photo em{
+	font-family: avenir;
+	text-align: center;
+	line-height: 12px;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: normal;
+}
+.photogallery {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 .my-gallery {
 	width: 100%;
 	float: left;
-	padding-bottom: 25px;
+	font-family: avenir;
+	font-size: 10px;
+	text-align: center;
+	line-height: 12px;
+}
+.my-gallery em{
+	font-size: 11px;
+	font-weight: bold;
+	font-style: normal;
 }
 .my-gallery img {
   width: 100%;
@@ -328,7 +392,8 @@ nav li a {
 	font-family: avenir;
 	text-align: center;
 	font-size: 9px;
-	padding-top: 90px;
+	padding-top: 0px;
+	
 }
 .aboutheading {
 	text-align: center;
