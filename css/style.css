@@ -32,7 +32,6 @@ nav li {
 	width: 33%;
 	padding-top: 5px;
 	padding-bottom: 6px;
-	border-bottom: 1px solid #DADADA;
 }
 nav li a {
 	margin: 0;
@@ -47,7 +46,7 @@ nav li a {
 	letter-spacing: 1px;
 }
 h1 {
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: bold;
 	padding-bottom: 0px;
 	text-decoration: none;
@@ -61,7 +60,7 @@ h1 {
 	font-family: avenir;
 	font-size: 10px;
 	text-align: center;
-	padding-top: 56px;
+	padding-top: 36px;
 	padding-bottom: 40px;
 	line-height: 12px;
 	border-bottom: 1px solid #DADADA;
@@ -70,11 +69,11 @@ h1 {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-	padding-bottom: 28px;
+	padding-bottom: 20px;
 	font-family: avenir;
 	font-size: 10px;
 	text-align: center;
-	padding-top: 28px;
+	padding-top: 20px;
 	line-height: 12px;
 }
 .installationpreview em {
@@ -117,7 +116,7 @@ h1 {
 	text-align: center;
 	font-family: avenir;
 	font-size: 20px;
-	padding-top: 80px;
+	padding-top: 45px;
 }
 .aboutbody {
 	font-family: avenir;
@@ -132,7 +131,7 @@ h1 {
 .aboutbody .email {
 	color: #000000;
 	font-size: x-small;
-	padding-bottom: 28px;
+	padding-bottom: 18px;
 }
 .videosbody {
 	font-family: avenir;
@@ -171,7 +170,7 @@ h1 {
 	padding-top: 0px;
 }
 .photo {
-	padding-top: 36px;
+	padding-top: 26px;
 	padding-bottom: 40px;
 	
 }
@@ -184,7 +183,7 @@ h1 {
 	font-style: normal;
 }
 .photogallery {
-	margin-top: 40px;
+	margin-top: 34px;
 	margin-bottom: 40px;
 }
 .my-gallery {
