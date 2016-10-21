@@ -427,6 +427,16 @@ div.play-button {
 	padding-bottom: 16px;
 	padding-top: 22px;
 }
+.caption {
+	color: #000000;
+	font-family: avenir;
+	font-family: avenir;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	line-height: 12px;
+}
 @media (min-width: 600px) 
 {
 nav li a {
@@ -517,3 +527,4 @@ nav li a {
 	padding-bottom: 8px;
 	background-blend-mode: exclusion;
 }
+
