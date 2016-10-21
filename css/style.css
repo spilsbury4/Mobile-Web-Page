@@ -60,20 +60,19 @@ h1 {
 	font-family: avenir;
 	font-size: 10px;
 	text-align: center;
-	padding-top: 36px;
+	padding-top: 0px;
 	padding-bottom: 40px;
 	line-height: 12px;
 	border-bottom: 1px solid #DADADA;
 }
 .installationpreview img {
 	display: block;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding-bottom: 28px;
 	font-family: avenir;
 	font-size: 10px;
 	text-align: center;
-	padding-top: 28px;
 	line-height: 12px;
 }
 .installationpreview em {
@@ -198,7 +197,7 @@ h1 {
 }
 .rungif h2 {
 	position: absolute;
-	bottom: 39%;
+	bottom: 50%;
 	left: 0;
 	width: 100%;
 	z-index: 5;
@@ -434,8 +433,9 @@ div.play-button {
 	top: 0; 
 	left: 0; 
 }
-.bodycontainer .showcase #retailspace {
-}
+.bodycontainer #retailspace {
+	padding-bottom: 16px;
+	padding-top: 22px;
 
 @media (min-width: 600px)
 {
@@ -456,7 +456,8 @@ nav li a {
 	padding-bottom: 26px;
 }
 .bodycontainer #retailspace {
-	padding-bottom: 40px;
+	padding-bottom: 20px;
+	padding-top: 22px;
 }
 .footer {
 	font-family: avenir;
