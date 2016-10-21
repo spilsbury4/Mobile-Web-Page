@@ -179,13 +179,13 @@ h1 {
 	z-index: 5;
 }
 .truckgif h2 span {
-	color: #000000;
+	color: #FFFFFF;
 	line-height: 0px;
 	font-weight: bold;
 	font-size: 11px;
 	font-family: avenir;
 	background: rgb(0, 0, 0); /* fallback color */
-	background-color: rgba(255,255,255,0.70);
+	background-color: rgba(255,255,255,0.0);
 	padding-top: 8px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -204,13 +204,13 @@ h1 {
 	z-index: 5;
 }
 .rungif h2 span {
-	color: #000000;
+	color: #FFFFFF;
 	line-height: 0px;
 	font-weight: bold;
 	font-size: 11px;
 	font-family: avenir;
 	background: rgb(0, 0, 0); /* fallback color */
-	background-color: rgba(240,240,240,0.70);
+	background-color: rgba(240,240,240,0.00);
 	padding-top: 8px;
 	padding-right: 20px;
 	padding-left: 20px;
@@ -498,4 +498,30 @@ nav li a {
 	font-style: normal;
 	padding-bottom: 0px;
 }
+.truckgif h2 span {
+	color: #000000;
+	line-height: 0px;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: avenir;
+	background: rgb(0, 0, 0); /* fallback color */
+	background-color: rgba(255,255,255,0.70);
+	padding-top: 8px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 8px;
+}
+.rungif h2 span {
+	color: #000000;
+	line-height: 0px;
+	font-weight: bold;
+	font-size: 11px;
+	font-family: avenir;
+	background: rgb(0, 0, 0); /* fallback color */
+	background-color: rgba(240,240,240,0.70);
+	padding-top: 8px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 8px;
+	background-blend-mode: exclusion;
 }
