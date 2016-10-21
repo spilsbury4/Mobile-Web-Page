@@ -173,7 +173,7 @@ h1 {
 }
 .truckgif h2 {
 	position: absolute;
-	top: 46%;
+	bottom: 39%;
 	left: 0;
 	width: 100%;
 	z-index: 5;
@@ -198,7 +198,7 @@ h1 {
 }
 .rungif h2 {
 	position: absolute;
-	top: 46%;
+	bottom: 39%;
 	left: 0;
 	width: 100%;
 	z-index: 5;
@@ -484,6 +484,7 @@ nav li a {
 .aboutbody .email {
 	color: #000000;
 	font-size: 12px;
+}
 .videosbody {
 	font-family: avenir;
 	font-size: 12px;
