@@ -197,7 +197,7 @@ h1 {
 }
 .rungif h2 {
 	position: absolute;
-	bottom: 50%;
+	bottom: 39%;
 	left: 0;
 	width: 100%;
 	z-index: 5;
@@ -229,9 +229,8 @@ h1 {
 	padding-top: 0px;
 }
 .photo {
-	padding-top: 36px;
-	padding-bottom: 40px;
-	
+	padding-top: 0px;
+	padding-bottom: 40px;	
 }
 .photo em{
 	font-family: avenir;
@@ -436,8 +435,8 @@ div.play-button {
 .bodycontainer #retailspace {
 	padding-bottom: 16px;
 	padding-top: 22px;
-
-@media (min-width: 600px)
+}
+@media (min-width: 600px) 
 {
 nav li a {
 	margin: 0;
