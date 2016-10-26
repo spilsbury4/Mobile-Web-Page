@@ -23,11 +23,18 @@
 <div class="videosbody">
 
 <div class="youtube-container">
+        <div class="youtube-player-allthismoney" id="allthismoney_thumbnail" data-id="jcZ1Te9-1go">   
+        </div>
+    </div>
+    <em>ALL THIS MONEY</em> INJURY RESERVE<br>
+        	CINEMATOGRAPHY BY JACKSON SPILSBURY
+
+<div class="youtube-container">
         <div class="youtube-player-ohshit" id="ohshit_thumbnail" data-id="1-Mjw96lYgU">   
         </div>
     </div>
     <em>OH SHIT!!!</em> INJURY RESERVE<br>
-        	CINEMATORGRAPHY AND SET DESIGN BY JACKSON SPILSBURY. RELEASED 7.26.16
+        	CINEMATORGRAPHY BY JACKSON SPILSBURY
 
 <!--<div class="vimeo-container">
 	<div class="vimeo-player" id="foulplay_thumbnail" data-id="155099988"></div>
@@ -41,29 +48,53 @@
         </div>
     </div>
     <em>YO</em> INJURY RESERVE<br>
-        	DIRECTED BY JACKSON SPILSBURY AND INJURY RESERVE. RELEASED 10.7.15 VIA ILLROOTS
+        	DIRECTED BY JACKSON SPILSBURY AND INJURY RESERVE
             
 <div class="youtube-container">
         <div class="youtube-player-squad" id="squad_thumbnail" data-id="cPFdDH7uJHo">   
         </div>
     </div>
     <em>SQUAD</em> DEMI HUGHES<br>
-        	DIRECTED BY JACKSON SPILSBURY. RELEASED 2.23.15
+        	DIRECTED BY JACKSON SPILSBURY
             
  <div class="youtube-container">
         <div class="youtube-player-everybodyknows" id="everybodyknows_thumbnail" data-id="yPs4RAJd1-o"> 
         </div>
     </div>
     <em>EVERYBODY KNOWS</em> INJURY RESERVE<br>
-        	DIRECTED BY VIBES N STUFF. RELEASED 6.18.15 VIA ILLROOTS
+        	DIRECTED BY VIBES N STUFF
             
  <div class="youtube-container">
         <div class="youtube-player-mindright" id="mindright_thumbnail" data-id="uCXjznpMCeY"> 
         </div>
     </div>
     <em>MIND RIGHT</em> SAIH<br>
-        	DIRECTED BY JACKSON SPILSBURY. RELEASED 7.30.15 VIA ELEVATOR.
+        	DIRECTED BY JACKSON SPILSBURY
  </div>
+
+<script>
+(function() {
+    var v = document.getElementsByClassName("youtube-player-allthismoney");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="youtube-thumb" src="img/' + id + '.jpg"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "youtube-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
 
 <script>
 (function() {
