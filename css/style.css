@@ -21,7 +21,7 @@ nav ul {
 	margin-right: 0;
 	margin-left: 0;
 	padding-top: 0px;
-	padding-bottom: 5px;
+	padding-bottom: 35px;
 	padding-right: 0;
 	padding-left: 0;
 	list-style-type: none;
@@ -57,31 +57,6 @@ h1 {
 	margin-bottom: 15px;
 	padding-top: 28px;
 }
-.installationpreview {
-	font-family: avenir;
-	font-size: 10px;
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 40px;
-	line-height: 12px;
-	border-bottom: 1px solid #DADADA;
-}
-.installationpreview img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-bottom: 28px;
-	font-family: avenir;
-	font-size: 10px;
-	text-align: center;
-	line-height: 12px;
-}
-.installationpreview em {
-	font-size: 11px;
-	font-weight: bold;
-	font-style: normal;
-	padding-bottom: 0px;
-}
 .footer {
 	font-family: avenir;
 	font-weight: lighter;
@@ -109,14 +84,11 @@ h1 {
 	width: 33%;
 	color: #000000;
 }
-.demovideo {
-	padding-top: 25px;
-}
 .aboutheading {
 	text-align: center;
 	font-family: avenir;
 	font-size: 20px;
-	padding-top: 45px;
+	padding-top: 24px;
 }
 .aboutbody {
 	font-family: avenir;
@@ -151,71 +123,65 @@ h1 {
 	font-style: normal;
 	padding-bottom: 0px;
 }
-.video {
+.gallery {
+	width: 100%;
+	max-width: 400px;
+	height: 100%;
+	position: relative;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	}
+.gallery-image{
+	cursor: pointer;
+	position: relative;
+	display: block;
+	padding-top: 0px;
+	}
+.gallery-text{
 	position: absolute;
 	top: 0;
+	right: 0;
+	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
-}
-.showcase video{
-	display: block;
-	margin: 0 auto;
-}
-.truckgif {
-	position: relative;
-	width: 100%;
-	z-index: 0;
-}
-.truckgif h2 {
-	position: absolute;
-	bottom: 44%;
-	left: 0;
-	width: 100%;
-	z-index: 5;
-}
-.truckgif h2 span {
-	color: #FFFFFF;
-	line-height: 0px;
-	font-weight: bold;
-	font-size: 11px;
+	height: 98%;
+	text-align: center;
+	background-color: rgba(0,0,0,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.6s;
+	-moz-transition: opacity 0.6s;
+	transition: opacity 0.6s;
+	vertical-align: middle;
+	display:flex;
+    align-items: center;
+    justify-content: center;
+	}
+
+	.gallery-text:hover{
+	    opacity: 1;      
+	}
+
+	.gallery-text h3{
+	color: white;
+	display: inline-table;
+	vertical-align: middle;
 	font-family: avenir;
-	background: rgb(0, 0, 0); /* fallback color */
-	background-color: rgba(255,255,255,0.0);
-	padding-top: 8px;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-bottom: 8px;
-}
-.rungif {
-	position: relative;
-	width: 100%;
-	z-index: 0;
-}
-.rungif h2 {
-	position: absolute;
-	bottom: 37%;
-	left: 0;
-	width: 100%;
-	z-index: 5;
-}
-.rungif h2 span {
-	color: #FFFFFF;
-	line-height: 0px;
-	font-weight: bold;
-	font-size: 11px;
+	font-size: 12px;
+	}
+	.gallery-caption {
 	font-family: avenir;
-	background: rgb(0, 0, 0); /* fallback color */
-	background-color: rgba(240,240,240,0.00);
-	padding-top: 8px;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-bottom: 8px;
-	background-blend-mode: exclusion;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	line-height: 12px;
 }
-.caption #truck {
-	padding-top: 0px;
-	padding-bottom: 26px;
+.gallery-caption em {
+	font-size: 11px;
+	font-weight: bold;
+	font-style: normal;
+	padding-bottom: 0px;	
 }
 .bodycontainer #retailspace {
 	padding-bottom: 40px;
@@ -225,7 +191,7 @@ h1 {
 }
 .photo {
 	padding-top: 0px;
-	padding-bottom: 40px;	
+	border-top: 1px solid #DADADA;
 }
 .photo em{
 	font-family: avenir;
@@ -254,8 +220,8 @@ h1 {
 	font-style: normal;
 }
 .my-gallery img {
-  width: 100%;
-  height: auto;
+	width: 100%;
+	height: auto;
 }
 .my-gallery figure {
   display: block;
@@ -275,6 +241,20 @@ h1 {
 	width: 100%;
 	max-width: 600px;
 	padding-bottom: 0px;
+}
+.youtube-player-allthismoney { 
+	display: block; 
+	width: 100%; /* assuming that the video has a 16:9 ratio */ 
+	padding-bottom: 53.2%; 
+	overflow: hidden; 
+	position: relative; 
+	width: 100%; 
+	height: 100%; 
+	cursor: hand; 
+	cursor: pointer; 
+	display: block;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 .youtube-player-ohshit { 
 	display: block; 
@@ -441,6 +421,16 @@ div.play-button {
 	padding-bottom: 16px;
 	line-height: 12px;
 }
+.truckcaption {
+	color: #000000;
+	font-family: avenir;
+	font-family: avenir;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 4px;
+	line-height: 12px;
+}
 @media (min-width: 600px) 
 {
 nav li a {
@@ -474,7 +464,7 @@ nav li a {
 	text-align: center;
 	font-family: avenir;
 	font-size: 20px;
-	padding-top: 110px;
+	padding-top: 30px;
 }
 .aboutbody {
 	font-family: avenir;
@@ -484,7 +474,7 @@ nav li a {
 	font-weight: lighter;
 	font-size: px;
 	line-height: 20px;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 .aboutbody .email {
 	color: #000000;
@@ -504,31 +494,4 @@ nav li a {
 	font-style: normal;
 	padding-bottom: 0px;
 }
-.truckgif h2 span {
-	color: #000000;
-	line-height: 0px;
-	font-weight: bold;
-	font-size: 11px;
-	font-family: avenir;
-	background: rgb(0, 0, 0); /* fallback color */
-	background-color: rgba(255,255,255,0.70);
-	padding-top: 8px;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-bottom: 8px;
 }
-.rungif h2 span {
-	color: #000000;
-	line-height: 0px;
-	font-weight: bold;
-	font-size: 11px;
-	font-family: avenir;
-	background: rgb(0, 0, 0); /* fallback color */
-	background-color: rgba(240,240,240,0.70);
-	padding-top: 8px;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-bottom: 8px;
-	background-blend-mode: exclusion;
-}
-
