@@ -39,157 +39,9 @@
         <br>
         INSTALLATION BY JACKSON SPILSBURY<br>
       </div>  
-            
-<script>
-(function() {
-    var v = document.getElementsByClassName("youtube-player-ohshit");
-    for (var n = 0; n < v.length; n++) {
-        var p = document.createElement("div");
-        p.innerHTML = labnolThumb(v[n].dataset.id);
-        p.onclick = labnolIframe;
-        v[n].appendChild(p);
-    }
-})();
- 
-function labnolThumb(id) {
-    return '<img class="youtube-thumb" src="img/' + id + '.jpg"><div class="play-button"></div>';
-}
- 
-function labnolIframe() {
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("id", "youtube-iframe");
-    this.parentNode.replaceChild(iframe, this);
-}
-</script>
-
-<script>
-(function() {
-    var v = document.getElementsByClassName("vimeo-player");
-    for (var n = 0; n < v.length; n++) {
-        var p = document.createElement("div");
-        p.innerHTML = labnolThumb(v[n].dataset.id);
-        p.onclick = labnolIframe;
-        v[n].appendChild(p);
-    }
-})();
- 
-function labnolThumb(id) {
-    return '<img class="vimeo-thumb" src="img/editorial_thumbnail.jpg"><div class="play-button"></div>';
-}
- 
-function labnolIframe() {
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "https://player.vimeo.com/video/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("id", "vimeo-iframe");
-    this.parentNode.replaceChild(iframe, this);
-}
-</script>
-
-<script>
-(function() {
-    var v = document.getElementsByClassName("youtube-player-yo");
-    for (var n = 0; n < v.length; n++) {
-        var p = document.createElement("div");
-        p.innerHTML = labnolThumb(v[n].dataset.id);
-        p.onclick = labnolIframe;
-        v[n].appendChild(p);
-    }
-})();
- 
-function labnolThumb(id) {
-    return '<img class="youtube-thumb" src="img/' + id + '.jpg"><div class="play-button"></div>';
-}
- 
-function labnolIframe() {
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("id", "youtube-iframe");
-    this.parentNode.replaceChild(iframe, this);
-}
-</script>
-
-<script>
-(function() {
-    var v = document.getElementsByClassName("youtube-player-squad");
-    for (var n = 0; n < v.length; n++) {
-        var p = document.createElement("div");
-        p.innerHTML = labnolThumb(v[n].dataset.id);
-        p.onclick = labnolIframe;
-        v[n].appendChild(p);
-    }
-})();
- 
-function labnolThumb(id) {
-    return '<img class="youtube-thumb" src="img/' + id + '.jpg"><div class="play-button"></div>';
-}
- 
-function labnolIframe() {
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("id", "youtube-iframe");
-    this.parentNode.replaceChild(iframe, this);
-}
-</script>
-
-<script>
-(function() {
-    var v = document.getElementsByClassName("youtube-player-everybodyknows");
-    for (var n = 0; n < v.length; n++) {
-        var p = document.createElement("div");
-        p.innerHTML = labnolThumb(v[n].dataset.id);
-        p.onclick = labnolIframe;
-        v[n].appendChild(p);
-    }
-})();
- 
-function labnolThumb(id) {
-    return '<img class="youtube-thumb" src="img/' + id + '.jpg"><div class="play-button"></div>';
-}
- 
-function labnolIframe() {
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("id", "youtube-iframe");
-    this.parentNode.replaceChild(iframe, this);
-}
-</script>
-
-<script>
-(function() {
-    var v = document.getElementsByClassName("youtube-player-mindright");
-    for (var n = 0; n < v.length; n++) {
-        var p = document.createElement("div");
-        p.innerHTML = labnolThumb(v[n].dataset.id);
-        p.onclick = labnolIframe;
-        v[n].appendChild(p);
-    }
-})();
- 
-function labnolThumb(id) {
-    return '<img class="youtube-thumb" src="img/' + id + '.jpg"><div class="play-button"></div>';
-}
- 
-function labnolIframe() {
-    var iframe = document.createElement("iframe");
-    iframe.setAttribute("src", "http://www.youtube.com/embed/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("id", "youtube-iframe");
-    this.parentNode.replaceChild(iframe, this);
-}
-</script>
-
-<!--Insert at the end of the thumbnail return
-<div class="play-button"></div>
--->
 
 
-
+<div class="retailphotos">
 
   <!--<h2>First Gallery:</h2>-->
 
@@ -250,8 +102,6 @@ function labnolIframe() {
 
 
   </div>
-  
-
 
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -323,6 +173,31 @@ function labnolIframe() {
 <script src="js/photoswipe-ui-default.min.js"></script>
 
         <script src="js/index.js"></script>
+        
+        <script>
+(function() {
+    var v = document.getElementsByClassName("vimeo-player");
+    for (var n = 0; n < v.length; n++) {
+        var p = document.createElement("div");
+        p.innerHTML = labnolThumb(v[n].dataset.id);
+        p.onclick = labnolIframe;
+        v[n].appendChild(p);
+    }
+})();
+ 
+function labnolThumb(id) {
+    return '<img class="vimeo-thumb" src="img/editorial_thumbnail.jpg"><div class="play-button"></div>';
+}
+ 
+function labnolIframe() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("src", "https://player.vimeo.com/video/" + this.parentNode.dataset.id + "?autoplay=1&hd=1");
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("id", "vimeo-iframe");
+    this.parentNode.replaceChild(iframe, this);
+}
+</script>
+</div>
 </div>
 </body>
 
